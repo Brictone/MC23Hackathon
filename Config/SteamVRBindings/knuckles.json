@@ -14,18 +14,7 @@
 					{
 						"click":
 						{
-							"output": "/actions/main/in/LeftFaceAPress"
-						}
-					}
-				},
-				{
-					"mode": "button",
-					"path": "/user/hand/left/input/b",
-					"inputs":
-					{
-						"click":
-						{
-							"output": "/actions/main/in/LeftFaceBPress"
+							"output": "/actions/main/in/ShowContextualMenu_VR_L"
 						}
 					}
 				},
@@ -36,7 +25,18 @@
 					{
 						"click":
 						{
-							"output": "/actions/main/in/RightFaceAPress"
+							"output": "/actions/main/in/ShowContextualMenu_VR_R"
+						}
+					}
+				},
+				{
+					"mode": "button",
+					"path": "/user/hand/left/input/b",
+					"inputs":
+					{
+						"click":
+						{
+							"output": "/actions/main/in/VR_Teleport_L"
 						}
 					}
 				},
@@ -47,7 +47,7 @@
 					{
 						"click":
 						{
-							"output": "/actions/main/in/RightFaceBPress"
+							"output": "/actions/main/in/VR_Teleport_R"
 						}
 					}
 				},
@@ -58,7 +58,7 @@
 					{
 						"click":
 						{
-							"output": "/actions/main/in/LeftTriggerPress"
+							"output": "/actions/main/in/VR_Trigger_L"
 						}
 					}
 				},
@@ -69,117 +69,7 @@
 					{
 						"click":
 						{
-							"output": "/actions/main/in/RightTriggerPress"
-						}
-					}
-				},
-				{
-					"mode": "trigger",
-					"path": "/user/hand/left/input/grip",
-					"inputs":
-					{
-						"click":
-						{
-							"output": "/actions/main/in/LeftGripPress"
-						}
-					}
-				},
-				{
-					"mode": "trigger",
-					"path": "/user/hand/right/input/grip",
-					"inputs":
-					{
-						"click":
-						{
-							"output": "/actions/main/in/RightGripPress"
-						}
-					}
-				},
-				{
-					"mode": "joystick",
-					"path": "/user/hand/left/input/thumbstick",
-					"inputs":
-					{
-						"click":
-						{
-							"output": "/actions/main/in/LeftStickClick"
-						}
-					}
-				},
-				{
-					"mode": "joystick",
-					"path": "/user/hand/right/input/thumbstick",
-					"inputs":
-					{
-						"click":
-						{
-							"output": "/actions/main/in/RightStickClick"
-						}
-					}
-				},
-				{
-					"mode": "joystick",
-					"path": "/user/hand/left/input/thumbstick",
-					"inputs":
-					{
-						"position":
-						{
-							"output": "/actions/main/in/MotionControllerThumbLeft_X,MotionControllerThumbLeft_Y X Y_axis2d"
-						}
-					}
-				},
-				{
-					"mode": "joystick",
-					"path": "/user/hand/right/input/thumbstick",
-					"inputs":
-					{
-						"position":
-						{
-							"output": "/actions/main/in/MotionControllerThumbRight_X,MotionControllerThumbRight_Y X Y_axis2d"
-						}
-					}
-				},
-				{
-					"mode": "force_sensor",
-					"path": "/user/hand/left/input/grip",
-					"inputs":
-					{
-						"force":
-						{
-							"output": "/actions/main/in/LeftGripAxis axis"
-						}
-					}
-				},
-				{
-					"mode": "force_sensor",
-					"path": "/user/hand/right/input/grip",
-					"inputs":
-					{
-						"force":
-						{
-							"output": "/actions/main/in/RightGripAxis axis"
-						}
-					}
-				},
-				{
-					"mode": "trigger",
-					"path": "/user/hand/left/input/trigger",
-					"inputs":
-					{
-						"pull":
-						{
-							"output": "/actions/main/in/LeftTriggerAxis axis"
-						}
-					}
-				},
-				{
-					"mode": "trigger",
-					"path": "/user/hand/right/input/trigger",
-					"inputs":
-					{
-						"pull":
-						{
-							"output": "/actions/main/in/RightTriggerAxis axis"
+							"output": "/actions/main/in/VR_Trigger_R"
 						}
 					}
 				}
@@ -217,5 +107,5 @@
 			]
 		}
 	},
-	"description": "Virtual Reality BP Game Template-13908680"
+	"description": ""
 }

@@ -6,30 +6,7 @@
 	{
 		"/actions/main":
 		{
-			"sources": [
-				{
-					"mode": "joystick",
-					"path": "/user/hand/left/input/joystick",
-					"inputs":
-					{
-						"position":
-						{
-							"output": "/actions/main/in/MotionControllerThumbLeft_X,MotionControllerThumbLeft_Y X Y_axis2d"
-						}
-					}
-				},
-				{
-					"mode": "joystick",
-					"path": "/user/hand/right/input/joystick",
-					"inputs":
-					{
-						"position":
-						{
-							"output": "/actions/main/in/MotionControllerThumbRight_X,MotionControllerThumbRight_Y X Y_axis2d"
-						}
-					}
-				}
-			],
+			"sources": [],
 			"poses": [
 				{
 					"output": "/actions/main/in/controllerleft",
@@ -63,5 +40,5 @@
 			]
 		}
 	},
-	"description": "Virtual Reality BP Game Template-13908680"
+	"description": ""
 }

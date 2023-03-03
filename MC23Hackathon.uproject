@@ -1,101 +1,91 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "4.25",
+	"EngineAssociation": "5.1",
 	"Category": "",
 	"Description": "",
-	"Modules": [
-		{
-			"Name": "VRMP_1",
-			"Type": "Runtime",
-			"LoadingPhase": "Default"
-		}
-	],
 	"Plugins": [
 		{
-			"Name": "AlembicImporter",
+			"Name": "SunPosition",
+			"Enabled": true
+		},
+		{
+			"Name": "DataPrepEditor",
+			"Enabled": true
+		},
+		{
+			"Name": "DatasmithImporter",
+			"Enabled": true
+		},
+		{
+			"Name": "VariantManager",
+			"Enabled": true
+		},
+		{
+			"Name": "PythonScriptPlugin",
+			"Enabled": true
+		},
+		{
+			"Name": "HDRIBackdrop",
+			"Enabled": true
+		},
+		{
+			"Name": "SequencerScripting",
 			"Enabled": false
 		},
 		{
-			"Name": "AndroidMoviePlayer",
-			"Enabled": false
-		},
-		{
-			"Name": "ApexDestruction",
-			"Enabled": true
-		},
-		{
-			"Name": "AppleMoviePlayer",
-			"Enabled": false
-		},
-		{
-			"Name": "ArchVisCharacter",
-			"Enabled": false
-		},
-		{
-			"Name": "BlueprintFileUtils",
-			"Enabled": true
-		},
-		{
-			"Name": "BlueprintMaterialTextureNodes",
-			"Enabled": true
-		},
-		{
-			"Name": "BlueprintStats",
-			"Enabled": true
-		},
-		{
-			"Name": "CameraShakePreviewer",
-			"Enabled": false
-		},
-		{
-			"Name": "AudioModulation",
-			"Enabled": true
-		},
-		{
-			"Name": "GoogleARCoreServices",
-			"Enabled": true
-		},
-		{
-			"Name": "GoogleARCore",
+			"Name": "DatasmithCADImporter",
 			"Enabled": true,
 			"SupportedTargetPlatforms": [
-				"Android"
-			]
-		},
-		{
-			"Name": "GoogleCloudMessaging",
-			"Enabled": false
-		},
-		{
-			"Name": "HoloLensAR",
-			"Enabled": true,
-			"SupportedTargetPlatforms": [
-				"HoloLens",
 				"Win64"
 			]
 		},
 		{
-			"Name": "SteamController",
+			"Name": "DatasmithIFCImporter",
+			"Enabled": true,
+			"SupportedTargetPlatforms": [
+				"Win64"
+			]
+		},
+		{
+			"Name": "DatasmithGLTFImporter",
 			"Enabled": true
 		},
 		{
-			"Name": "Spatialization",
+			"Name": "AxFImporter",
+			"Enabled": true,
+			"SupportedTargetPlatforms": [
+				"Win64"
+			]
+		},
+		{
+			"Name": "DatasmithRuntime",
 			"Enabled": true
 		},
 		{
-			"Name": "SoundUtilities",
-			"Enabled": true
+			"Name": "OpenXR",
+			"Enabled": true,
+			"SupportedTargetPlatforms": [
+				"Win64",
+				"Linux",
+				"Android",
+				"HoloLens"
+			]
 		},
 		{
-			"Name": "VoiceChat",
-			"Enabled": false
+			"Name": "OculusVR",
+			"Enabled": false,
+			"SupportedTargetPlatforms": [
+				"Win32",
+				"Win64"
+			]
+		},
+		{
+			"Name": "SteamVR",
+			"Enabled": false,
+			"SupportedTargetPlatforms": [
+				"Win32",
+				"Win64"
+			]
 		}
-	],
-	"TargetPlatforms": [
-		"PS4",
-		"WindowsNoEditor",
-		"LinuxNoEditor",
-		"Android",
-		"LinuxAArch64NoEditor"
 	]
 }
