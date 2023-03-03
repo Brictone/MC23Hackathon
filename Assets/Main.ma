@@ -1,15 +1,16 @@
 //Maya ASCII 2023 scene
 //Name: Main.ma
-//Last modified: Fri, Mar 03, 2023 12:38:45 PM
+//Last modified: Fri, Mar 03, 2023 01:25:02 PM
 //Codeset: 1252
 requires maya "2023";
+requires -nodeType "gameFbxExporter" "gameFbxExporter" "1.0";
 currentUnit -l centimeter -a degree -t film;
 fileInfo "application" "maya";
 fileInfo "product" "Maya 2023";
 fileInfo "version" "2023";
 fileInfo "cutIdentifier" "202211021031-847a9f9623";
 fileInfo "osv" "Windows 10 Pro v2009 (Build: 19045)";
-fileInfo "UUID" "F43B9E26-4904-1E60-52AA-91AE71B35B05";
+fileInfo "UUID" "B68A6626-4C19-72F8-3AD9-CA801AC50630";
 createNode transform -s -n "persp";
 	rename -uid "3EB2C4CB-4BB8-9A24-3978-188B025F9E8D";
 	setAttr ".v" no;
@@ -95,6 +96,7 @@ createNode mesh -n "LeftWallShape" -p "LeftWall";
 	setAttr ".gtag[4].gtagcmp" -type "componentList" 1 "f[4]";
 	setAttr ".gtag[5].gtagnm" -type "string" "top";
 	setAttr ".gtag[5].gtagcmp" -type "componentList" 1 "f[1]";
+	setAttr ".pv" -type "double2" 0.5 0.5 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 14 ".uvst[0].uvsp[0:13]" -type "float2" 0.375 0 0.625 0 0.375
 		 0.25 0.625 0.25 0.375 0.5 0.625 0.5 0.375 0.75 0.625 0.75 0.375 1 0.625 1 0.875 0
@@ -146,6 +148,7 @@ createNode mesh -n "GroundShape" -p "Ground";
 	setAttr ".gtag[4].gtagcmp" -type "componentList" 1 "f[4]";
 	setAttr ".gtag[5].gtagnm" -type "string" "top";
 	setAttr ".gtag[5].gtagcmp" -type "componentList" 1 "f[1]";
+	setAttr ".pv" -type "double2" 0.5 0.5 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 14 ".uvst[0].uvsp[0:13]" -type "float2" 0.375 0 0.625 0 0.375
 		 0.25 0.625 0.25 0.375 0.5 0.625 0.5 0.375 0.75 0.625 0.75 0.375 1 0.625 1 0.875 0
@@ -198,6 +201,7 @@ createNode mesh -n "RightWallShape" -p "RightWall";
 	setAttr ".gtag[4].gtagcmp" -type "componentList" 1 "f[4]";
 	setAttr ".gtag[5].gtagnm" -type "string" "top";
 	setAttr ".gtag[5].gtagcmp" -type "componentList" 1 "f[1]";
+	setAttr ".pv" -type "double2" 0.5 0.5 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 14 ".uvst[0].uvsp[0:13]" -type "float2" 0.375 0 0.625 0 0.375
 		 0.25 0.625 0.25 0.375 0.5 0.625 0.5 0.375 0.75 0.625 0.75 0.375 1 0.625 1 0.875 0
@@ -253,7 +257,7 @@ createNode mesh -n "UCX_FrontWall_Shape2" -p "UCX_FrontWall_02";
 	setAttr ".gtag[4].gtagcmp" -type "componentList" 0;
 	setAttr ".gtag[5].gtagnm" -type "string" "top";
 	setAttr ".gtag[5].gtagcmp" -type "componentList" 1 "f[1]";
-	setAttr ".pv" -type "double2" 0.75 0.5 ;
+	setAttr ".pv" -type "double2" 0.8125 0.125 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 8 ".uvst[0].uvsp[0:7]" -type "float2" 0.875 0 0.875 0.25
 		 0.75 0 0.75 0.25 0.75 0 0.75 0.25 0.875 0.25 0.875 0;
@@ -310,7 +314,7 @@ createNode mesh -n "BackWallShape" -p "BackWall";
 	setAttr ".gtag[4].gtagcmp" -type "componentList" 1 "f[4]";
 	setAttr ".gtag[5].gtagnm" -type "string" "top";
 	setAttr ".gtag[5].gtagcmp" -type "componentList" 1 "f[1]";
-	setAttr ".pv" -type "double2" 0.25 0.5 ;
+	setAttr ".pv" -type "double2" 0.5 0.5 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 14 ".uvst[0].uvsp[0:13]" -type "float2" 0.375 0 0.625 0 0.375
 		 0.25 0.625 0.25 0.375 0.5 0.625 0.5 0.375 0.75 0.625 0.75 0.375 1 0.625 1 0.875 0
@@ -367,7 +371,7 @@ createNode mesh -n "FrontWallShape" -p "FrontWall";
 	setAttr ".gtag[4].gtagcmp" -type "componentList" 3 "f[4]" "f[8]" "f[10:21]";
 	setAttr ".gtag[5].gtagnm" -type "string" "top";
 	setAttr ".gtag[5].gtagcmp" -type "componentList" 2 "f[1]" "f[9]";
-	setAttr ".pv" -type "double2" 0.75 0.5 ;
+	setAttr ".pv" -type "double2" 0.5 0.5 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 34 ".uvst[0].uvsp[0:33]" -type "float2" 0.375 0 0.625 0 0.375
 		 0.25 0.625 0.25 0.375 0.5 0.625 0.5 0.375 0.75 0.625 0.75 0.375 1 0.625 1 0.875 0
@@ -471,7 +475,7 @@ createNode mesh -n "UCX_FrontWall_Shape3" -p "UCX_FrontWall_03";
 	setAttr ".gtag[4].gtagcmp" -type "componentList" 2 "f[4]" "f[8]";
 	setAttr ".gtag[5].gtagnm" -type "string" "top";
 	setAttr ".gtag[5].gtagcmp" -type "componentList" 1 "f[1]";
-	setAttr ".pv" -type "double2" 0.6875 0.4375 ;
+	setAttr ".pv" -type "double2" 0.4375 0.5 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 20 ".uvst[0].uvsp[0:19]" -type "float2" 0.375 0 0.625 0 0.375
 		 0.25 0.625 0.25 0.375 0.5 0.625 0.5 0.375 0.75 0.625 0.75 0.375 1 0.625 1 0.125 0
@@ -536,7 +540,7 @@ createNode mesh -n "UCX_FrontWall_Shape1" -p "UCX_FrontWall_01";
 	setAttr ".gtag[4].gtagcmp" -type "componentList" 2 "f[4]" "f[8]";
 	setAttr ".gtag[5].gtagnm" -type "string" "top";
 	setAttr ".gtag[5].gtagcmp" -type "componentList" 1 "f[1]";
-	setAttr ".pv" -type "double2" 0.75 0.125 ;
+	setAttr ".pv" -type "double2" 0.8125 0.125 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 12 ".uvst[0].uvsp[0:11]" -type "float2" 0.75 0.25 0.75 0
 		 0.875 0 0.875 0.25 0.75 0 0.75 0.25 0.875 0.25 0.875 0 0.75 0.25 0.75 0 0.75 0 0.75
@@ -643,6 +647,35 @@ createNode script -n "sceneConfigurationScriptNode";
 	rename -uid "2AFE7CEC-49B1-722F-F7DC-F2B7BC4083E5";
 	setAttr ".b" -type "string" "playbackOptions -min 0 -max 30 -ast 0 -aet 30 ";
 	setAttr ".st" 6;
+createNode gameFbxExporter -n "gameExporterPreset1";
+	rename -uid "545D9405-4C9F-6CDD-AF20-A8A8DF4C25C6";
+	setAttr ".pn" -type "string" "Model Default";
+	setAttr ".ils" yes;
+	setAttr ".ilu" yes;
+	setAttr ".esi" 2;
+	setAttr ".ski" no;
+	setAttr ".bsh" no;
+	setAttr ".ich" yes;
+	setAttr ".inc" yes;
+	setAttr ".fv" -type "string" "FBX201800";
+	setAttr ".exp" -type "string" "G:/GitHub/MC23Hackathon/Assets";
+	setAttr ".exf" -type "string" "MainRoom";
+createNode gameFbxExporter -n "gameExporterPreset2";
+	rename -uid "122B1F7A-48EA-E2E7-68CD-6B862B2BADC3";
+	setAttr ".pn" -type "string" "Anim Default";
+	setAttr ".ils" yes;
+	setAttr ".eti" 2;
+	setAttr ".spt" 2;
+	setAttr ".ic" no;
+	setAttr ".ebm" yes;
+	setAttr ".fv" -type "string" "FBX201800";
+createNode gameFbxExporter -n "gameExporterPreset3";
+	rename -uid "273ED148-4FF8-F40F-63F0-0F96572FB4B5";
+	setAttr ".pn" -type "string" "TE Anim Default";
+	setAttr ".ils" yes;
+	setAttr ".eti" 3;
+	setAttr ".ebm" yes;
+	setAttr ".fv" -type "string" "FBX201800";
 select -ne :time1;
 	setAttr ".o" 0;
 select -ne :hardwareRenderingGlobals;
