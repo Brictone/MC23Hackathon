@@ -1,6 +1,10 @@
 //Maya ASCII 2023 scene
 //Name: Main.ma
+<<<<<<< HEAD
 //Last modified: Sun, Mar 05, 2023 02:52:14 PM
+=======
+//Last modified: Sun, Mar 05, 2023 03:33:19 PM
+>>>>>>> main
 //Codeset: 1252
 requires maya "2023";
 requires -nodeType "polyBoolean" "polyBoolean" "1.1";
@@ -15,7 +19,11 @@ fileInfo "product" "Maya 2023";
 fileInfo "version" "2023";
 fileInfo "cutIdentifier" "202211021031-847a9f9623";
 fileInfo "osv" "Windows 10 Pro v2009 (Build: 19045)";
+<<<<<<< HEAD
 fileInfo "UUID" "21B0D5E9-4C19-6B4F-FB69-FB9B53F142CF";
+=======
+fileInfo "UUID" "E803626E-47E5-5BA6-BF6D-718DBE8E6197";
+>>>>>>> main
 createNode transform -s -n "persp";
 	rename -uid "3EB2C4CB-4BB8-9A24-3978-188B025F9E8D";
 	setAttr ".v" no;
@@ -42155,7 +42163,11 @@ createNode mesh -n "UCX_Cabinet_Shape4" -p "UCX_Cabinet_04";
 	setAttr ".gtag[4].gtagcmp" -type "componentList" 1 "f[4]";
 	setAttr ".gtag[5].gtagnm" -type "string" "top";
 	setAttr ".gtag[5].gtagcmp" -type "componentList" 1 "f[1]";
+<<<<<<< HEAD
 	setAttr ".pv" -type "double2" 0.5 0.375 ;
+=======
+	setAttr ".pv" -type "double2" 0.5 0.5 ;
+>>>>>>> main
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 14 ".uvst[0].uvsp[0:13]" -type "float2" 0.375 0 0.625 0 0.375
 		 0.25 0.625 0.25 0.375 0.5 0.625 0.5 0.375 0.75 0.625 0.75 0.375 1 0.625 1 0.875 0
@@ -42212,7 +42224,11 @@ createNode mesh -n "UCX_Cabinet_Shape5" -p "UCX_Cabinet_05";
 	setAttr ".gtag[4].gtagcmp" -type "componentList" 1 "f[4]";
 	setAttr ".gtag[5].gtagnm" -type "string" "top";
 	setAttr ".gtag[5].gtagcmp" -type "componentList" 1 "f[1]";
+<<<<<<< HEAD
 	setAttr ".pv" -type "double2" 0.75 0.375 ;
+=======
+	setAttr ".pv" -type "double2" 0.5 0.5 ;
+>>>>>>> main
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 14 ".uvst[0].uvsp[0:13]" -type "float2" 0.375 0 0.625 0 0.375
 		 0.25 0.625 0.25 0.375 0.5 0.625 0.5 0.375 0.75 0.625 0.75 0.375 1 0.625 1 0.875 0
@@ -42322,7 +42338,11 @@ createNode mesh -n "UCX_CabinetDoor_R_Shape1" -p "UCX_CabinetDoor_R_01";
 	setAttr ".gtag[4].gtagcmp" -type "componentList" 1 "f[4]";
 	setAttr ".gtag[5].gtagnm" -type "string" "top";
 	setAttr ".gtag[5].gtagcmp" -type "componentList" 1 "f[1]";
+<<<<<<< HEAD
 	setAttr ".pv" -type "double2" 0.25 0.375 ;
+=======
+	setAttr ".pv" -type "double2" 0.5 0.5 ;
+>>>>>>> main
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 14 ".uvst[0].uvsp[0:13]" -type "float2" 0.375 0 0.625 0 0.375
 		 0.25 0.625 0.25 0.375 0.5 0.625 0.5 0.375 0.75 0.625 0.75 0.375 1 0.625 1 0.875 0
@@ -42359,11 +42379,16 @@ createNode mesh -n "UCX_CabinetDoor_R_Shape1" -p "UCX_CabinetDoor_R_01";
 	setAttr ".db" yes;
 createNode transform -n "UCX_CabinetDoor_R_02";
 	rename -uid "EF83455C-464E-A6DB-C16F-4DA88EE4B96E";
+<<<<<<< HEAD
 	setAttr ".t" -type "double3" -27.062099456787109 10.324667930603027 9.9021535992229914 ;
 	setAttr ".s" -type "double3" 0.1598790526691351 0.042610014084454313 3.8640698639104132 ;
 	setAttr ".rp" -type "double3" 88.448276519775391 9.9908246994018413 37.979102504292655 ;
 	setAttr ".sp" -type "double3" 362.77938359303272 -2535.9458052265854 43.756487487607224 ;
 	setAttr ".spt" -type "double3" -274.33110707325733 2545.9366299259873 -5.7773849833145761 ;
+=======
+	setAttr ".rp" -type "double3" 61.386177062988281 20.315492630004854 47.881256103515653 ;
+	setAttr ".sp" -type "double3" 61.386177062988281 20.315492630004869 47.881256103515653 ;
+>>>>>>> main
 createNode mesh -n "UCX_CabinetDoor_R_Shape2" -p "UCX_CabinetDoor_R_02";
 	rename -uid "8E6A955D-48E0-CF77-AE5A-A7A924D76813";
 	setAttr -k off ".v";
@@ -42391,10 +42416,17 @@ createNode mesh -n "UCX_CabinetDoor_R_Shape2" -p "UCX_CabinetDoor_R_02";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
+<<<<<<< HEAD
 	setAttr -s 8 ".pt[0:7]" -type "float3"  14.615133 40.77906 45.848293 
 		57.868366 40.77906 45.848293 14.615133 205.82407 45.848293 57.868366 205.82407 45.848293 
 		14.615133 205.82407 44.000607 57.868366 205.82407 44.000607 14.615133 40.77906 44.000607 
 		57.868366 40.77906 44.000607;
+=======
+	setAttr -s 8 ".pt[0:7]" -type "float3"  6.142067 130.58847 57.396175 
+		12.217232 130.58847 57.396175 6.142067 136.66365 57.396175 12.217232 136.66365 57.396175 
+		6.142067 136.66365 47.392513 12.217232 136.66365 47.392513 6.142067 130.58847 47.392513 
+		12.217232 130.58847 47.392513;
+>>>>>>> main
 	setAttr -s 8 ".vt[0:7]"  -0.5 -0.5 0.5 0.5 -0.5 0.5 -0.5 0.5 0.5 0.5 0.5 0.5
 		 -0.5 0.5 -0.5 0.5 0.5 -0.5 -0.5 -0.5 -0.5 0.5 -0.5 -0.5;
 	setAttr -s 12 ".ed[0:11]"  0 1 0 2 3 0 4 5 0 6 7 0 0 2 0 1 3 0 2 4 0
@@ -42439,7 +42471,11 @@ createNode mesh -n "UCX_CabinetDoor_L_Shape1" -p "UCX_CabinetDoor_L_01";
 	setAttr ".gtag[4].gtagcmp" -type "componentList" 1 "f[4]";
 	setAttr ".gtag[5].gtagnm" -type "string" "top";
 	setAttr ".gtag[5].gtagcmp" -type "componentList" 1 "f[1]";
+<<<<<<< HEAD
 	setAttr ".pv" -type "double2" 0.25 0.375 ;
+=======
+	setAttr ".pv" -type "double2" 0.5 0.5 ;
+>>>>>>> main
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 14 ".uvst[0].uvsp[0:13]" -type "float2" 0.375 0 0.625 0 0.375
 		 0.25 0.625 0.25 0.375 0.5 0.625 0.5 0.375 0.75 0.625 0.75 0.375 1 0.625 1 0.875 0
@@ -42476,11 +42512,16 @@ createNode mesh -n "UCX_CabinetDoor_L_Shape1" -p "UCX_CabinetDoor_L_01";
 	setAttr ".db" yes;
 createNode transform -n "UCX_CabinetDoor_L_02";
 	rename -uid "823AD438-49F8-6A7D-2F2E-649EA0AFCBAA";
+<<<<<<< HEAD
 	setAttr ".t" -type "double3" -45.424144744873047 10.324667930603027 9.9021535992229914 ;
 	setAttr ".s" -type "double3" 0.1598790526691351 0.042610014084454313 3.8640698639104132 ;
 	setAttr ".rp" -type "double3" -10.951908111572266 9.9908246994018413 37.979102504292655 ;
 	setAttr ".sp" -type "double3" -258.94174229488067 -2535.9458052265854 43.756487487607224 ;
 	setAttr ".spt" -type "double3" 247.9898341833084 2545.9366299259873 -5.7773849833145761 ;
+=======
+	setAttr ".rp" -type "double3" -56.376052856445312 20.315492630004854 47.881256103515653 ;
+	setAttr ".sp" -type "double3" -56.376052856445312 20.315492630004869 47.881256103515653 ;
+>>>>>>> main
 createNode mesh -n "UCX_CabinetDoor_L_Shape2" -p "UCX_CabinetDoor_L_02";
 	rename -uid "E5AA10AB-4BE4-266C-1951-0AB4FB608753";
 	setAttr -k off ".v";
@@ -42508,10 +42549,17 @@ createNode mesh -n "UCX_CabinetDoor_L_Shape2" -p "UCX_CabinetDoor_L_02";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
+<<<<<<< HEAD
 	setAttr -s 8 ".pt[0:7]" -type "float3"  14.615133 40.77906 45.848293 
 		57.868366 40.77906 45.848293 14.615133 205.82407 45.848293 57.868366 205.82407 45.848293 
 		14.615133 205.82407 44.000607 57.868366 205.82407 44.000607 14.615133 40.77906 44.000607 
 		57.868366 40.77906 44.000607;
+=======
+	setAttr -s 8 ".pt[0:7]" -type "float3"  -12.219978 130.58847 57.396175 
+		-6.1448097 130.58847 57.396175 -12.219978 136.66365 57.396175 -6.1448097 136.66365 
+		57.396175 -12.219978 136.66365 47.392513 -6.1448097 136.66365 47.392513 -12.219978 
+		130.58847 47.392513 -6.1448097 130.58847 47.392513;
+>>>>>>> main
 	setAttr -s 8 ".vt[0:7]"  -0.5 -0.5 0.5 0.5 -0.5 0.5 -0.5 0.5 0.5 0.5 0.5 0.5
 		 -0.5 0.5 -0.5 0.5 0.5 -0.5 -0.5 -0.5 -0.5 0.5 -0.5 -0.5;
 	setAttr -s 12 ".ed[0:11]"  0 1 0 2 3 0 4 5 0 6 7 0 0 2 0 1 3 0 2 4 0
