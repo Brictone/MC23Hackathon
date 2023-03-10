@@ -86,6 +86,20 @@
 				"Win32",
 				"Win64"
 			]
+		},
+		{
+			"Name": "VRExpansionPlugin",
+			"Enabled": false,
+			"SupportedTargetPlatforms": [
+				"Win64",
+				"Linux",
+				"Android",
+				"HoloLens"
+			]
+		},
+		{
+			"Name": "OpenVRExpansionPlugin",
+			"Enabled": false
 		}
 	]
 }
